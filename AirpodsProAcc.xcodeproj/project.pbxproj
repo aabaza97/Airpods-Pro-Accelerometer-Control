@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5BF32B283A9A71003B458B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF32A283A9A71003B458B /* CameraController.swift */; };
+		AC5BF32D283AF1C4003B458B /* RulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF32C283AF1C4003B458B /* RulerView.swift */; };
 		AC9025DF27F8E96900F4D548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9025DE27F8E96900F4D548 /* AppDelegate.swift */; };
 		AC9025E127F8E96900F4D548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9025E027F8E96900F4D548 /* SceneDelegate.swift */; };
 		AC9025E327F8E96900F4D548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9025E227F8E96900F4D548 /* ViewController.swift */; };
 		AC9025E627F8E96900F4D548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9025E427F8E96900F4D548 /* Main.storyboard */; };
 		AC9025E827F8E96B00F4D548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9025E727F8E96B00F4D548 /* Assets.xcassets */; };
 		AC9025EB27F8E96B00F4D548 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9025E927F8E96B00F4D548 /* LaunchScreen.storyboard */; };
+		AC9025F527F8E9BB00F4D548 /* HeadPhoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9025F427F8E9BB00F4D548 /* HeadPhoneManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC5BF32A283A9A71003B458B /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		AC5BF32C283AF1C4003B458B /* RulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RulerView.swift; path = AirpodsProAcc/View/RulerView.swift; sourceTree = "<group>"; };
 		AC9025DB27F8E96900F4D548 /* AirpodsProAcc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirpodsProAcc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9025DE27F8E96900F4D548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9025E027F8E96900F4D548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		AC9025E727F8E96B00F4D548 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9025EA27F8E96B00F4D548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9025EC27F8E96B00F4D548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9025F427F8E9BB00F4D548 /* HeadPhoneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadPhoneManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		AC9025D227F8E96900F4D548 = {
 			isa = PBXGroup;
 			children = (
+				AC5BF32C283AF1C4003B458B /* RulerView.swift */,
 				AC9025DD27F8E96900F4D548 /* AirpodsProAcc */,
 				AC9025DC27F8E96900F4D548 /* Products */,
 			);
@@ -56,15 +63,33 @@
 		AC9025DD27F8E96900F4D548 /* AirpodsProAcc */ = {
 			isa = PBXGroup;
 			children = (
-				AC9025DE27F8E96900F4D548 /* AppDelegate.swift */,
-				AC9025E027F8E96900F4D548 /* SceneDelegate.swift */,
-				AC9025E227F8E96900F4D548 /* ViewController.swift */,
+				AC9025F327F8E99A00F4D548 /* Controller */,
+				AC9025F227F8E99100F4D548 /* Foundation Files */,
 				AC9025E427F8E96900F4D548 /* Main.storyboard */,
 				AC9025E727F8E96B00F4D548 /* Assets.xcassets */,
-				AC9025E927F8E96B00F4D548 /* LaunchScreen.storyboard */,
 				AC9025EC27F8E96B00F4D548 /* Info.plist */,
 			);
 			path = AirpodsProAcc;
+			sourceTree = "<group>";
+		};
+		AC9025F227F8E99100F4D548 /* Foundation Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC9025DE27F8E96900F4D548 /* AppDelegate.swift */,
+				AC9025E027F8E96900F4D548 /* SceneDelegate.swift */,
+				AC9025E927F8E96B00F4D548 /* LaunchScreen.storyboard */,
+			);
+			path = "Foundation Files";
+			sourceTree = "<group>";
+		};
+		AC9025F327F8E99A00F4D548 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC9025E227F8E96900F4D548 /* ViewController.swift */,
+				AC9025F427F8E9BB00F4D548 /* HeadPhoneManager.swift */,
+				AC5BF32A283A9A71003B458B /* CameraController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9025E327F8E96900F4D548 /* ViewController.swift in Sources */,
+				AC5BF32D283AF1C4003B458B /* RulerView.swift in Sources */,
 				AC9025DF27F8E96900F4D548 /* AppDelegate.swift in Sources */,
 				AC9025E127F8E96900F4D548 /* SceneDelegate.swift in Sources */,
+				AC9025F527F8E9BB00F4D548 /* HeadPhoneManager.swift in Sources */,
+				AC5BF32B283A9A71003B458B /* CameraController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +332,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +360,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

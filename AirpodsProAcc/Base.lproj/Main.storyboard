@@ -1,24 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AirpodsProAcc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-xk-rcj">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ffG-xk-rcj" secondAttribute="height" multiplier="1:1" id="cTk-vD-rYr"/>
+                                    <constraint firstAttribute="width" constant="200" id="nRD-VM-zqM"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qmt-dO-6Fi">
+                                <rect key="frame" x="198.5" y="812" width="17" height="15"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="hbg-pC-I5b"/>
+                                    <constraint firstAttribute="height" constant="17" id="wSG-dr-nBW"/>
+                                </constraints>
+                                <imageReference key="image" image="triangle.fill" catalog="system" symbolScale="medium"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeadPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knh-4E-3Gh">
+                                <rect key="frame" x="132.5" y="214" width="149" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqn-xQ-P0q">
+                                <rect key="frame" x="149.5" y="256" width="115.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-tk-QHA" customClass="RulerView" customModule="AirpodsProAcc" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="761" width="414" height="42"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="f3j-dI-K84"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isVertical" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRM-5n-99q" customClass="RulerView" customModule="AirpodsProAcc" customModuleProvider="target">
+                                <rect key="frame" x="372" y="248" width="42" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="WLm-gn-ge4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isVertical" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YGD-tp-vBe">
+                                <rect key="frame" x="347" y="440.5" width="17" height="15"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="ndM-O4-BxH"/>
+                                    <constraint firstAttribute="width" constant="17" id="oWW-Et-uUm"/>
+                                </constraints>
+                                <imageReference key="image" image="triangle.fill" catalog="system" symbolScale="medium"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ffG-xk-rcj" firstAttribute="top" secondItem="Knh-4E-3Gh" secondAttribute="bottom" constant="100" id="5HL-jq-IjD"/>
+                            <constraint firstItem="qmt-dO-6Fi" firstAttribute="top" secondItem="Brt-tk-QHA" secondAttribute="bottom" constant="8" id="5c6-8C-Xwf"/>
+                            <constraint firstAttribute="trailing" secondItem="tRM-5n-99q" secondAttribute="trailing" id="7Vv-Ul-kl8"/>
+                            <constraint firstItem="Knh-4E-3Gh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Buk-QE-VV5"/>
+                            <constraint firstItem="Brt-tk-QHA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CZL-Ob-tlu"/>
+                            <constraint firstItem="tRM-5n-99q" firstAttribute="centerY" secondItem="ffG-xk-rcj" secondAttribute="centerY" id="Kkd-ne-R3m"/>
+                            <constraint firstItem="Wqn-xQ-P0q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N9E-7g-QAN"/>
+                            <constraint firstItem="Wqn-xQ-P0q" firstAttribute="top" secondItem="Knh-4E-3Gh" secondAttribute="bottom" constant="8" id="Up8-m8-0ZF"/>
+                            <constraint firstItem="YGD-tp-vBe" firstAttribute="centerY" secondItem="tRM-5n-99q" secondAttribute="centerY" id="dvw-Q0-wJd"/>
+                            <constraint firstItem="qmt-dO-6Fi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ffA-xj-abX"/>
+                            <constraint firstItem="tRM-5n-99q" firstAttribute="height" secondItem="ffG-xk-rcj" secondAttribute="height" multiplier="2:1" id="gDi-NB-uQ0"/>
+                            <constraint firstItem="ffG-xk-rcj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jcY-T3-BNi"/>
+                            <constraint firstItem="qmt-dO-6Fi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-34" id="kDU-U7-Zx8"/>
+                            <constraint firstItem="tRM-5n-99q" firstAttribute="leading" secondItem="YGD-tp-vBe" secondAttribute="trailing" constant="8" id="npF-QR-Ybu"/>
+                            <constraint firstItem="ffG-xk-rcj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rMb-5S-UkS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Brt-tk-QHA" secondAttribute="trailing" id="w7l-O3-QCT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="connectionStatusLabel" destination="Wqn-xQ-P0q" id="tDB-n2-92x"/>
+                        <outlet property="displayView" destination="ffG-xk-rcj" id="gUj-4m-aJa"/>
+                        <outlet property="pointerViewX" destination="YGD-tp-vBe" id="LWQ-jq-Bku"/>
+                        <outlet property="pointerViewZ" destination="qmt-dO-6Fi" id="TbH-WM-bh8"/>
+                        <outlet property="xRuler" destination="tRM-5n-99q" id="Ugk-54-R11"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="triangle.fill" catalog="system" width="128" height="112"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
