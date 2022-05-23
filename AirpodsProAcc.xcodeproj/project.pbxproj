@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC5BF32B283A9A71003B458B /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF32A283A9A71003B458B /* CameraController.swift */; };
 		AC5BF32D283AF1C4003B458B /* RulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5BF32C283AF1C4003B458B /* RulerView.swift */; };
+		AC5BF32F283B06A8003B458B /* screen_recording.mov in Resources */ = {isa = PBXBuildFile; fileRef = AC5BF32E283B06A8003B458B /* screen_recording.mov */; };
 		AC9025DF27F8E96900F4D548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9025DE27F8E96900F4D548 /* AppDelegate.swift */; };
 		AC9025E127F8E96900F4D548 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9025E027F8E96900F4D548 /* SceneDelegate.swift */; };
 		AC9025E327F8E96900F4D548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9025E227F8E96900F4D548 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		AC5BF32A283A9A71003B458B /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		AC5BF32C283AF1C4003B458B /* RulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RulerView.swift; path = AirpodsProAcc/View/RulerView.swift; sourceTree = "<group>"; };
+		AC5BF32E283B06A8003B458B /* screen_recording.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = screen_recording.mov; sourceTree = "<group>"; };
 		AC9025DB27F8E96900F4D548 /* AirpodsProAcc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirpodsProAcc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9025DE27F8E96900F4D548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9025E027F8E96900F4D548 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				AC9025E427F8E96900F4D548 /* Main.storyboard */,
 				AC9025E727F8E96B00F4D548 /* Assets.xcassets */,
 				AC9025EC27F8E96B00F4D548 /* Info.plist */,
+				AC5BF32E283B06A8003B458B /* screen_recording.mov */,
 			);
 			path = AirpodsProAcc;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9025EB27F8E96B00F4D548 /* LaunchScreen.storyboard in Resources */,
+				AC5BF32F283B06A8003B458B /* screen_recording.mov in Resources */,
 				AC9025E827F8E96B00F4D548 /* Assets.xcassets in Resources */,
 				AC9025E627F8E96900F4D548 /* Main.storyboard in Resources */,
 			);
